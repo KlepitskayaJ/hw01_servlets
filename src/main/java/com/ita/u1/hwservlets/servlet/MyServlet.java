@@ -1,6 +1,6 @@
-package by.stlab.demohw.servlet;
+package com.ita.u1.hwservlets.servlet;
 
-import by.stlab.demohw.service.NumbersServiceImpl;
+import com.ita.u1.hwservlets.service.NumbersServiceImpl;
 
 import java.io.*;
 import java.util.ArrayList;

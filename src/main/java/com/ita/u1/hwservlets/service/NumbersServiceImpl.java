@@ -1,6 +1,6 @@
-package by.stlab.demohw.service;
+package com.ita.u1.hwservlets.service;
 
-import by.stlab.demohw.dao.NumbersDAOImpl;
+import com.ita.u1.hwservlets.dao.NumbersDAOImpl;
 
 import java.util.ArrayList;
 import java.util.Collections;

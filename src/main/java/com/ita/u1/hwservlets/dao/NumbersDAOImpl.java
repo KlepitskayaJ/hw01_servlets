@@ -1,4 +1,4 @@
-package by.stlab.demohw.dao;
+package com.ita.u1.hwservlets.dao;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

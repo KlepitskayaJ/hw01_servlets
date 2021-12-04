@@ -1,4 +1,4 @@
-package by.stlab.demohw.service;
+package com.ita.u1.hwservlets.service;
 
 import java.util.List;
 

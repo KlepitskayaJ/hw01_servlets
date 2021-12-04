@@ -3,7 +3,7 @@
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <display-name>MyServlet</display-name>
-        <servlet-class>by.stlab.demohw.servlet.MyServlet</servlet-class>
+        <servlet-class>com.ita.u1.hwservlets.servlet.MyServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
