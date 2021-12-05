@@ -1,7 +1,7 @@
 package com.ita.u1.hwservlets.dao;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface NumbersDAO {
-    ArrayList<Integer> getNumFromFile();
+    List<Integer> getNumFromFile();
 }
