@@ -15,7 +15,7 @@ public class MyServlet extends HttpServlet {
     }
 
     @Override
-    public void init() {;
+    public void init() {
     }
 
     @Override

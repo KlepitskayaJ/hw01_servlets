@@ -2,6 +2,7 @@ package com.ita.u1.hwservlets.service;
 
 import com.ita.u1.hwservlets.dao.NumbersDAO;
 
+import java.io.InputStream;
 import java.util.Collections;
 import java.util.List;
 

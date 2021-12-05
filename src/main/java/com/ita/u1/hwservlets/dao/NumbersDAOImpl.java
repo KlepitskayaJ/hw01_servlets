@@ -1,19 +1,19 @@
 package com.ita.u1.hwservlets.dao;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class NumbersDAOImpl implements NumbersDAO {
-    private static final String PATH_TO_FILE = "D:\\STUDENTS_LAB\\01_servlets\\demohw\\src\\main\\resources\\input.txt";
+    private static final String PATH_TO_FILE = "input.txt";
 
     @Override
     public List<Integer> getNumFromFile() {
-
         List<Integer> numbers = new ArrayList();
-        try (BufferedReader br = new BufferedReader(new FileReader(PATH_TO_FILE))) {
+
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        try (InputStream input = classLoader.getResourceAsStream(PATH_TO_FILE);
+             BufferedReader br = new BufferedReader(new InputStreamReader(input))) {
             String str;
             while ((str = br.readLine()) != null) {
                 numbers.add(Integer.parseInt(str));
