@@ -1,15 +1,19 @@
 package com.ita.u1.hwservlets.service;
 
 import com.ita.u1.hwservlets.dao.NumbersDAO;
-import com.ita.u1.hwservlets.dao.NumbersDAOImpl;
 
 import java.util.Collections;
 import java.util.List;
 
 public class NumbersServiceImpl implements NumbersService {
+    private final NumbersDAO nDao;
+
+    public NumbersServiceImpl(NumbersDAO nDao) {
+        this.nDao = nDao;
+    }
+
     @Override
     public List<Integer> getNumbersFromDAO() {
-        NumbersDAO nDao = new NumbersDAOImpl();
         return nDao.getNumFromFile();
     }
 

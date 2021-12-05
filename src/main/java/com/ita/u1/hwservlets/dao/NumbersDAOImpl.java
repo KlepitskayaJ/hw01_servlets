@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NumbersDAOImpl implements NumbersDAO {
-
     private static final String PATH_TO_FILE = "D:\\STUDENTS_LAB\\01_servlets\\demohw\\src\\main\\resources\\input.txt";
 
     @Override
