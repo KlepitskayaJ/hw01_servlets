@@ -1,5 +1,6 @@
 package com.ita.u1.hwservlets.servlet;
 
+import com.ita.u1.hwservlets.service.NumbersService;
 import com.ita.u1.hwservlets.service.NumbersServiceImpl;
 
 import java.io.*;
@@ -17,7 +18,7 @@ public class MyServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        NumbersServiceImpl nService = new NumbersServiceImpl();
+        NumbersService nService = new NumbersServiceImpl();
         List<Integer> numbers = nService.getNumbersFromDAO();
 
         request.setAttribute("numbers", numbers);
@@ -27,7 +28,7 @@ public class MyServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        NumbersServiceImpl nService = new NumbersServiceImpl();
+        NumbersService nService = new NumbersServiceImpl();
         List<Integer> numbers = nService.sortArray();
 
         request.setAttribute("sortedNumbers", numbers);
